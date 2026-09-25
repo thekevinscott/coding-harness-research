@@ -1,0 +1,1 @@
+import{a as e}from"./rolldown-runtime-Cyuzqnbw.js";import{St as t}from"./vendor-styling-BCTKz1fG.js";import{l as n,o as r,r as i}from"./color-themes-XoFLT_9n.js";var a=e(t(),1);function o(){return a.useSyncExternalStore(r,i,()=>n)}export{o as t};

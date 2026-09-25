@@ -1,0 +1,1 @@
+import{t as e}from"./react-CWbTTUPs.js";var t=e(e=>({executionStatusByConversation:{},setExecutionStatus:(t,n)=>e(e=>({executionStatusByConversation:{...e.executionStatusByConversation,[t]:n}})),reset:()=>e({executionStatusByConversation:{}})}));export{t};

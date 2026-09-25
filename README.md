@@ -1,10 +1,11 @@
-# Coding-agent replay UI demos
+# Scripted coding-agent harness demos
 
-Static builds of open-source coding-agent transcript UIs, each replaying a recorded session with one decision checkpoint. No backend and no model calls. Transcript text is lorem ipsum.
+Open-source coding-agent harnesses running in the browser with a fixed, scripted session and no model or backend. Each one runs the same task, pauses at one decision point with three options, and plays the branch you pick.
 
-- `traceviewer/` - [abelperry/TraceViewer](https://github.com/abelperry/TraceViewer) (MIT)
-- `cc-viewer/` - [tim-hua-01/cc_transcript_viewer](https://github.com/tim-hua-01/cc_transcript_viewer) (MIT)
-- `claude-replay/` - [es617/claude-replay](https://github.com/es617/claude-replay) (MIT)
-- `assistant-ui/` - [assistant-ui/assistant-ui](https://github.com/assistant-ui/assistant-ui) (MIT)
+- `codex-terminal/` - the real [openai/codex](https://github.com/openai/codex) CLI (Apache-2.0), recorded against a scripted model and replayed in xterm.js. Type 1, 2 or 3 at the prompt.
+- `pi-terminal/` - the real Pi CLI from [badlogic/pi-mono](https://github.com/badlogic/pi-mono) (MIT), same method.
+- `pi-web/` - [agegr/pi-web](https://github.com/agegr/pi-web) (MIT) with a scripted mock backend. Reply A, B or C in the composer.
+- `claude-code-webui/` - [sugyan/claude-code-webui](https://github.com/sugyan/claude-code-webui) (MIT) with its demo engine ungated.
+- `openhands/` - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) (MIT) mock build with a timed event driver. Reply A, B or C in the composer.
 
-Each folder is built output, modified from upstream to add the checkpoint. Upstream licenses apply.
+Each folder is built output, modified from upstream. Upstream licenses apply.
