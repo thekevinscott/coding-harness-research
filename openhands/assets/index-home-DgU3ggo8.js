@@ -1,1 +1,0 @@
-import{F as e}from"./vendor~entry.client~root~root-layout~index-home~home~conversation-panel~conversation~launch~i58xkef6-B6gum1zy.js";import{t}from"./home-BCWUZX11.js";import{t as n}from"./signup-fix-demo-script-BLXqjzQF.js";import"./use-pinned-home-route-x5glPiV4.js";var r=()=>e(`/conversations/${n}`);export{r as clientLoader,t as default};
