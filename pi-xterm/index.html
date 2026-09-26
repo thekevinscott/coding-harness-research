@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>pi</title>
+<script type="importmap">
+{ "imports": {
+  "node:fs": "./dist/node/fs.js",
+  "node:fs/promises": "./dist/node/fs-promises.js",
+  "node:os": "./dist/node/os.js",
+  "node:path": "./dist/node/path.js"
+} }
+</script>
+<script>
+window.__earlyInput = [];
+window.__earlyKey = function (e) {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  var d = e.key.length === 1 ? e.key : e.key === "Enter" ? "\r" : e.key === "Backspace" ? "\x7f" : null;
+  if (d) { window.__earlyInput.push(d); e.preventDefault(); }
+};
+document.addEventListener("keydown", window.__earlyKey, true);
+</script>
+<link rel="stylesheet" href="dist/pi.css">
+<style>
+html, body { margin: 0; height: 100%; background: #1e1e1e; }
+#terminal { position: absolute; inset: 8px; }
+</style>
+</head>
+<body>
+<div id="terminal"></div>
+<script type="module" src="dist/pi.js"></script>
+</body>
+</html>
